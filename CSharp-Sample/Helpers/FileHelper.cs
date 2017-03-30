@@ -12,11 +12,11 @@ namespace CSharp_Sample.Helpers
     internal static class FileHelper
     {
 
-        private static readonly string filePath = @"C:\Users\andra\Desktop\SDKs\CSharp\Responses";
+        private static readonly string filePath = @"C:\Users\vandrade\Desktop\temp\20170330-sdkresponses";
 
         internal static void SaveResponse(object response, string method)
         {
-            var fileName = $"{DateTime.UtcNow.ToString("yyyyMMddTHHddss")} - RESPONSE {method}.txt";
+            var fileName = $"{DateTime.UtcNow.ToString("yyyyMMddTHHmmss")} - RESPONSE {method}.txt";
 
             var responseJson = JsonConvert.SerializeObject(response, Formatting.Indented);
 
@@ -40,7 +40,7 @@ namespace CSharp_Sample.Helpers
 
         internal static void SaveException(Exception e, string method)
         {
-            var fileName = $"{DateTime.UtcNow.ToString("yyyyMMddTHHddss")} - UNKNOWNEXCEPTION {method}.txt";
+            var fileName = $"{DateTime.UtcNow.ToString("yyyyMMddTHHmmss")} - UNKNOWNEXCEPTION {method}.txt";
 
 
             var exception = new

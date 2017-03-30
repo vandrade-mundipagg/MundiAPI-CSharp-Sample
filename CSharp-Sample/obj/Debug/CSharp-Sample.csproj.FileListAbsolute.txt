@@ -11,3 +11,16 @@ C:\Users\andra\Desktop\SDKs\CSharp\Sample\CSharp-Sample\CSharp-Sample\bin\Debug\
 C:\Users\andra\Desktop\SDKs\CSharp\Sample\CSharp-Sample\CSharp-Sample\obj\Debug\CSharp-Sample.csprojResolveAssemblyReference.cache
 C:\Users\andra\Desktop\SDKs\CSharp\Sample\CSharp-Sample\CSharp-Sample\obj\Debug\CSharp-Sample.exe
 C:\Users\andra\Desktop\SDKs\CSharp\Sample\CSharp-Sample\CSharp-Sample\obj\Debug\CSharp-Sample.pdb
+C:\GitHub\MundiAPI-CSharp-Sample\CSharp-Sample\bin\Debug\CSharp-Sample.exe.config
+C:\GitHub\MundiAPI-CSharp-Sample\CSharp-Sample\obj\Debug\CSharp-Sample.exe
+C:\GitHub\MundiAPI-CSharp-Sample\CSharp-Sample\obj\Debug\CSharp-Sample.pdb
+C:\GitHub\MundiAPI-CSharp-Sample\CSharp-Sample\bin\Debug\CSharp-Sample.exe
+C:\GitHub\MundiAPI-CSharp-Sample\CSharp-Sample\bin\Debug\CSharp-Sample.pdb
+C:\GitHub\MundiAPI-CSharp-Sample\CSharp-Sample\bin\Debug\MundiAPI.PCL.dll
+C:\GitHub\MundiAPI-CSharp-Sample\CSharp-Sample\bin\Debug\Newtonsoft.Json.dll
+C:\GitHub\MundiAPI-CSharp-Sample\CSharp-Sample\bin\Debug\Microsoft.Threading.Tasks.dll
+C:\GitHub\MundiAPI-CSharp-Sample\CSharp-Sample\bin\Debug\unirest-net.dll
+C:\GitHub\MundiAPI-CSharp-Sample\CSharp-Sample\bin\Debug\MundiAPI.PCL.pdb
+C:\GitHub\MundiAPI-CSharp-Sample\CSharp-Sample\bin\Debug\Newtonsoft.Json.xml
+C:\GitHub\MundiAPI-CSharp-Sample\CSharp-Sample\bin\Debug\Microsoft.Threading.Tasks.xml
+C:\GitHub\MundiAPI-CSharp-Sample\CSharp-Sample\obj\Debug\CSharp-Sample.csprojResolveAssemblyReference.cache

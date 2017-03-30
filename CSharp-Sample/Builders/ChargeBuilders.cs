@@ -69,7 +69,8 @@ namespace CSharp_Sample.Builders
                             ExpYear = 21
                         },
                         StatementDescriptor = "STATEMENT TEST",
-                        Installments = 3
+                        Installments = 3,
+                        Capture = capture
                     };
 
                     break;
