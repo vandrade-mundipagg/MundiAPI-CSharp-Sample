@@ -28,6 +28,13 @@ namespace CSharp_Sample
 
             var client = BuildClient();
 
+
+
+            Console.WriteLine("Program End");
+
+        }
+
+        static void RunChargesClient(IMundiAPIClient client) {
             //Criação + cancelamento total
             Console.WriteLine("Create + Cancel");
             var chargeId = ChargesClient.CreateCardCharge(client);
@@ -60,11 +67,17 @@ namespace CSharp_Sample
             //Consulta
             ChargesClient.GetCharge(client, chargeId);
             ChargesClient.GetCharges(client);
+        }
 
-            Console.WriteLine("Program End");
+        static void RunOrdersClient(IMundiAPIClient client) {
+            //Criação + Consulta
+            Console.WriteLine("Criação + consulta");
+            var orderId = OrdersClient.CreateCardOrder(client);
+            OrdersClient.GetOrder(client, orderId);
 
-
-
+            //Listagem
+            Console.WriteLine("Listagem");
+            OrdersClient.GetOrders(client);
         }
 
         static IMundiAPIClient BuildClient()

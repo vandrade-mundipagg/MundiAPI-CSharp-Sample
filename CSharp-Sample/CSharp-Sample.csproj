@@ -52,7 +52,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Builders\ChargeBuilders.cs" />
+    <Compile Include="Builders\OrderBuilders.cs" />
     <Compile Include="Clients\ChargesClient.cs" />
+    <Compile Include="Clients\OrdersClient.cs" />
     <Compile Include="Helpers\FileHelper.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
