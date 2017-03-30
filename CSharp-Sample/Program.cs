@@ -28,7 +28,15 @@ namespace CSharp_Sample
 
             var client = BuildClient();
 
+            //Criar + Atualizar + Obter
+            Console.WriteLine("Criar + Atualizar + Obter");
+            var customerId = CustomersClient.CreateCustomer(client);
+            CustomersClient.UpdateCustomer(client, customerId);
+            CustomersClient.GetCustomer(client, customerId);
 
+            //Listar
+            Console.WriteLine("Listar");
+            CustomersClient.GetCustomers(client);
 
             Console.WriteLine("Program End");
 
