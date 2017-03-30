@@ -1,0 +1,13 @@
+C:\Users\andra\Desktop\SDKs\CSharp\Sample\CSharp-Sample\CSharp-Sample\bin\Debug\CSharp-Sample.exe.config
+C:\Users\andra\Desktop\SDKs\CSharp\Sample\CSharp-Sample\CSharp-Sample\bin\Debug\CSharp-Sample.exe
+C:\Users\andra\Desktop\SDKs\CSharp\Sample\CSharp-Sample\CSharp-Sample\bin\Debug\CSharp-Sample.pdb
+C:\Users\andra\Desktop\SDKs\CSharp\Sample\CSharp-Sample\CSharp-Sample\bin\Debug\MundiAPI.PCL.dll
+C:\Users\andra\Desktop\SDKs\CSharp\Sample\CSharp-Sample\CSharp-Sample\bin\Debug\Newtonsoft.Json.dll
+C:\Users\andra\Desktop\SDKs\CSharp\Sample\CSharp-Sample\CSharp-Sample\bin\Debug\Microsoft.Threading.Tasks.dll
+C:\Users\andra\Desktop\SDKs\CSharp\Sample\CSharp-Sample\CSharp-Sample\bin\Debug\unirest-net.dll
+C:\Users\andra\Desktop\SDKs\CSharp\Sample\CSharp-Sample\CSharp-Sample\bin\Debug\MundiAPI.PCL.pdb
+C:\Users\andra\Desktop\SDKs\CSharp\Sample\CSharp-Sample\CSharp-Sample\bin\Debug\Newtonsoft.Json.xml
+C:\Users\andra\Desktop\SDKs\CSharp\Sample\CSharp-Sample\CSharp-Sample\bin\Debug\Microsoft.Threading.Tasks.xml
+C:\Users\andra\Desktop\SDKs\CSharp\Sample\CSharp-Sample\CSharp-Sample\obj\Debug\CSharp-Sample.csprojResolveAssemblyReference.cache
+C:\Users\andra\Desktop\SDKs\CSharp\Sample\CSharp-Sample\CSharp-Sample\obj\Debug\CSharp-Sample.exe
+C:\Users\andra\Desktop\SDKs\CSharp\Sample\CSharp-Sample\CSharp-Sample\obj\Debug\CSharp-Sample.pdb
