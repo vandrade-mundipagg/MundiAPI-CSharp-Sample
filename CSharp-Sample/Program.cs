@@ -28,6 +28,39 @@ namespace CSharp_Sample
 
             var client = BuildClient();
 
+            //Criação + atualização + consulta
+            Console.WriteLine("Criação + atualização + consulta");
+            var planId = PlansClient.CreatePlan(client);
+            PlansClient.UpdatePlan(client, planId);
+            PlansClient.GetPlan(client, planId);
+
+            //Adicionar item + atualizar item + consultar item
+            Console.WriteLine("Adicionar item + atualizar item + consultar item");
+            var planItemId = PlansClient.CreatePlanItem(client, planId);
+            PlansClient.UpdatePlanItem(client, planId, planItemId);
+            PlansClient.GetPlanItem(client, planId, planItemId);
+
+            //Remover item
+            Console.WriteLine("Remover item");
+            PlansClient.DeletePlanItem(client, planId, planItemId);
+
+            //Listar itens de um plano
+            Console.WriteLine("Listar itens de um plano");
+            PlansClient.GetPlanItems(client, planId);
+
+            //Listar planos
+            Console.WriteLine("Listar planos");
+            PlansClient.GetPlans(client);
+
+            //Excluir plano
+            Console.WriteLine("Excluir plano");
+            PlansClient.DeletePlan(client, planId);
+
+            Console.WriteLine("Program End");
+
+        }
+
+        static void RunAddressesClient(IMundiAPIClient client) {
             //Criação + Atualização + Consulta
             Console.WriteLine("Criação + Atualização + Consulta");
             var customerId = CustomersClient.CreateCustomer(client);
@@ -42,9 +75,6 @@ namespace CSharp_Sample
             //Exclusão
             Console.WriteLine("Exclusão");
             AddressesClient.DeleteAddress(client, customerId, addressId);
-
-            Console.WriteLine("Program End");
-
         }
 
         static void RunCardsClient(IMundiAPIClient client) {
