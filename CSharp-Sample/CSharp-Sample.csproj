@@ -51,9 +51,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Builders\AddressBuilders.cs" />
+    <Compile Include="Builders\CardBuilders.cs" />
     <Compile Include="Builders\ChargeBuilders.cs" />
     <Compile Include="Builders\CustomerBuilders.cs" />
     <Compile Include="Builders\OrderBuilders.cs" />
+    <Compile Include="Clients\AddressesClient.cs" />
+    <Compile Include="Clients\CardsClient.cs" />
     <Compile Include="Clients\ChargesClient.cs" />
     <Compile Include="Clients\CustomersClient.cs" />
     <Compile Include="Clients\OrdersClient.cs" />

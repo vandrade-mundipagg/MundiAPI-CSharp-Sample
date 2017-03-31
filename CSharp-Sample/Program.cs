@@ -28,6 +28,43 @@ namespace CSharp_Sample
 
             var client = BuildClient();
 
+            //Criação + Atualização + Consulta
+            Console.WriteLine("Criação + Atualização + Consulta");
+            var customerId = CustomersClient.CreateCustomer(client);
+            var addressId = AddressesClient.CreateAddress(client, customerId);
+            AddressesClient.UpdateAddress(client, customerId, addressId);
+            AddressesClient.GetAddress(client, customerId, addressId);
+
+            //Listagem:
+            Console.WriteLine("Listagem");
+            AddressesClient.GetAddresses(client, customerId);
+
+            //Exclusão
+            Console.WriteLine("Exclusão");
+            AddressesClient.DeleteAddress(client, customerId, addressId);
+
+            Console.WriteLine("Program End");
+
+        }
+
+        static void RunCardsClient(IMundiAPIClient client) {
+            //Criação + Consulta + Atualização
+            Console.WriteLine("Criação + Consulta + Atualização");
+            var customerId = CustomersClient.CreateCustomer(client);
+            var cardId = CardsClient.CreateCreditCard(client, customerId);
+            CardsClient.GetCreditCard(client, customerId, cardId);
+            CardsClient.UpdateCreditCard(client, customerId, cardId);
+
+            //Listagem
+            Console.WriteLine("Listagem");
+            CardsClient.GetCreditCards(client, customerId);
+
+            //Exclusão
+            Console.WriteLine("Exclusão");
+            CardsClient.DeleteCreditCard(client, customerId, cardId);
+        }
+
+        static void RunCustomersClient(IMundiAPIClient client) {
             //Criar + Atualizar + Obter
             Console.WriteLine("Criar + Atualizar + Obter");
             var customerId = CustomersClient.CreateCustomer(client);
@@ -37,9 +74,6 @@ namespace CSharp_Sample
             //Listar
             Console.WriteLine("Listar");
             CustomersClient.GetCustomers(client);
-
-            Console.WriteLine("Program End");
-
         }
 
         static void RunChargesClient(IMundiAPIClient client) {
