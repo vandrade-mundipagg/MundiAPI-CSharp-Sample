@@ -57,12 +57,14 @@
     <Compile Include="Builders\CustomerBuilders.cs" />
     <Compile Include="Builders\OrderBuilders.cs" />
     <Compile Include="Builders\PlanBuilders.cs" />
+    <Compile Include="Builders\SubscriptionBuilders.cs" />
     <Compile Include="Clients\AddressesClient.cs" />
     <Compile Include="Clients\CardsClient.cs" />
     <Compile Include="Clients\ChargesClient.cs" />
     <Compile Include="Clients\CustomersClient.cs" />
     <Compile Include="Clients\OrdersClient.cs" />
     <Compile Include="Clients\PlansClient.cs" />
+    <Compile Include="Clients\SubscriptionsClient.cs" />
     <Compile Include="Helpers\FileHelper.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

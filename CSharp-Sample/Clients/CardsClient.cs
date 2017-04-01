@@ -16,7 +16,7 @@ namespace CSharp_Sample.Clients {
             var request = CardBuilders.BuildCreateCreditCardRequest();
 
             try {
-                var response = client.Customers.CreateCreditCard(request, customerId);
+                var response = client.Customers.CreateCreditCard(customerId, request);
                 FileHelper.SaveResponse(response, "CreateCreditCard");
                 return response.Id;
             }

@@ -28,6 +28,90 @@ namespace CSharp_Sample
 
             var client = BuildClient();
 
+            //RunPlansClient(client); //TODO está com erro nas listagens
+
+            RunSubscriptionsClient(client);
+
+            Console.WriteLine("Program End");
+
+        }
+
+        static void RunSubscriptionsClient(IMundiAPIClient client) {
+
+            //Criação + Consulta (plano)
+            Console.WriteLine("Criação + Consulta (plano)");
+            var subscriptionId = SubscriptionsClient.CreateSubscriptionByPlan(client);
+            SubscriptionsClient.GetSubscription(client, subscriptionId);
+
+            //Criação (avulsa)
+            Console.WriteLine("Criação + Consulta (avulsa)");
+            SubscriptionsClient.CreateSubscription(client);
+
+            //Adicionar item + Atualizar item
+            Console.WriteLine("Adicionar item + Atualizar item");
+            var subscriptionItemId = SubscriptionsClient.CreateSubscriptionItem(client, subscriptionId);
+            SubscriptionsClient.UpdateSubscriptionItem(client, subscriptionId, subscriptionItemId);
+
+            //Adicionar uso
+            Console.WriteLine("Adicionar uso");
+            var usageId = SubscriptionsClient.CreateUsage(client, subscriptionId, subscriptionItemId);
+
+            //Remover uso
+            Console.WriteLine("Remover uso");
+            SubscriptionsClient.DeleteUsage(client, subscriptionId, subscriptionItemId, usageId);
+
+            //Listar uso
+            Console.WriteLine("Listar uso");
+            SubscriptionsClient.GetUsages(client, subscriptionId, subscriptionItemId);
+
+            //Incluir desconto (item)
+            Console.WriteLine("Incluir desconto (item)");
+            SubscriptionsClient.CreateDiscountOnItem(client, subscriptionId, subscriptionItemId);
+
+            //Incluir desconto (assinatura)
+            Console.WriteLine("Incluir desconto (assinatura)");
+            var discountId = SubscriptionsClient.CreateDiscount(client, subscriptionId);
+
+            //Remover desconto
+            Console.WriteLine("Remover desconto");
+            SubscriptionsClient.DeleteDiscount(client, subscriptionId, discountId);
+
+            //Remover item
+            Console.WriteLine("Remover item");
+            SubscriptionsClient.DeleteSubscriptionItem(client, subscriptionId, subscriptionItemId);
+
+            //Listar itens
+            Console.WriteLine("Listar itens");
+            SubscriptionsClient.GetSubscriptionItems(client, subscriptionId);
+
+            //Atualizar cartão
+            Console.WriteLine("Atualizar cartão");
+            SubscriptionsClient.UpdateSubscriptionCreditCard(client, subscriptionId);
+
+            //Atualizar meio de pagamento
+            Console.WriteLine("Atualizar meio de pagamento");
+            SubscriptionsClient.UpdateSubscriptionPaymentMethod(client, subscriptionId);
+
+            //Atualizar data de faturamento
+            Console.WriteLine("Atualizar data de faturamento");
+            SubscriptionsClient.UpdateSubscriptionBillingDate(client, subscriptionId);
+
+            //Consultar faturas
+            Console.WriteLine("Consultar faturas");
+            subscriptionId = SubscriptionsClient.CreateSubscription(client);
+            SubscriptionsClient.GetSubscriptionInvoices(client, subscriptionId);
+
+            //Listagem
+            Console.WriteLine("Listagem");
+            SubscriptionsClient.GetSubscriptions(client);
+
+            //Exclusão
+            Console.WriteLine("Exclusão");
+            SubscriptionsClient.DeleteSubscription(client, subscriptionId);
+
+        }
+
+        static void RunPlansClient(IMundiAPIClient client) {
             //Criação + atualização + consulta
             Console.WriteLine("Criação + atualização + consulta");
             var planId = PlansClient.CreatePlan(client);
@@ -55,9 +139,6 @@ namespace CSharp_Sample
             //Excluir plano
             Console.WriteLine("Excluir plano");
             PlansClient.DeletePlan(client, planId);
-
-            Console.WriteLine("Program End");
-
         }
 
         static void RunAddressesClient(IMundiAPIClient client) {

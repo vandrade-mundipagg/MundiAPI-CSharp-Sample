@@ -11,6 +11,7 @@ namespace CSharp_Sample.Builders {
         internal static CreatePlanRequest BuildCreatePlanRequest() {
             var request = new CreatePlanRequest() {
                 BillingType = "prepaid",
+                PaymentMethods = new List<string> { "credit_card", "boleto" },
                 Name = "Nome do plano",
                 Items = new List<CreatePlanItemRequest>() {
                     new CreatePlanItemRequest() {

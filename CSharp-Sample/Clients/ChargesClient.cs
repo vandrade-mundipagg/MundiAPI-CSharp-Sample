@@ -62,7 +62,7 @@ namespace CSharp_Sample.Clients
 
             try 
             {
-                var response = client.Charges.UpdateChargePaymentMethod(request, chargeId);
+                var response = client.Charges.UpdateChargePaymentMethod(chargeId, request);
                 FileHelper.SaveResponse(response, "ChangePaymentMethod");
             }
             catch (ErrorException e)
@@ -115,7 +115,7 @@ namespace CSharp_Sample.Clients
 
             try
             {
-                var response = client.Charges.UpdateChargeCreditCard(request, chargeId);
+                var response = client.Charges.UpdateChargeCreditCard(chargeId, request);
                 FileHelper.SaveResponse(response, "ChangeCard");
             }
             catch (ErrorException e)
